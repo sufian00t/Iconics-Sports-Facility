@@ -1,0 +1,156 @@
+﻿@model IconicsArena.Context.Cart
+@{
+    ViewBag.Title = "Checkout";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Contents/StyleSheet1.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-image: url('@Url.Content("~/Images/assets/marcos-moraes-rFehnP5wN4Q-unsplash.jpg")');
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-direction: column; 
+            position: relative; 
+        }
+
+        .checkout-container {
+            background: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            width: 100%; 
+            max-width: 600px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            z-index: 1; 
+        }
+
+        h2, h4 {
+            margin-bottom: 20px; 
+        }
+
+        .table th, .table td {
+            text-align: left;
+            vertical-align: middle;
+            color: white; 
+        }
+
+        .form-group {
+            margin-bottom: 20px; 
+            color: white; 
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.2); 
+            color: white; 
+        }
+
+        a {
+            color: lightblue; 
+        }
+
+        a:hover {
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        
+        <a class="navbar-brand" href="#">Iconics Arena</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Checkout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="checkout-container mt-5">
+       
+        <h2>Checkout</h2>
+
+        <div class="cart-container mb-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.CartItems)
+                    {
+                        <tr>
+                            <td>@item.Product.ProductName</td>
+                            <td>@item.Quantity</td>
+                            <td>@item.UnitPrice.ToString() Taka</td>
+                            <td>@(item.Quantity * item.UnitPrice) Taka</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <h4>Total Amount: @Model.TotalAmount.ToString() Taka</h4>
+        </div>
+
+        <form method="post" action="@Url.Action("ConfirmOrder", "Order")" class="w-100">
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" required />
+                    I accept the <a href="#">terms and conditions</a> and the <a href="#">license agreement</a>.
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Select Payment Method:</label>
+                <div>
+                    <input type="radio" id="creditCard" name="paymentMethod" value="Credit Card" required />
+                    <label for="creditCard">Credit Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="paypal" name="paymentMethod" value="PayPal" required />
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div>
+                    <input type="radio" id="cashOnDelivery" name="paymentMethod" value="Cash on Delivery" required />
+                    <label for="cashOnDelivery">Cash on Delivery</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success w-100">Confirm Order</button> 
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

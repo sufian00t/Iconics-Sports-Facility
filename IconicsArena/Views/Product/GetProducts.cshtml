@@ -1,0 +1,254 @@
+﻿@using PagedList;
+
+@using PagedList.Mvc
+
+@model IPagedList<IconicsArena.Context.Product>
+@{
+    ViewBag.Title = "GetProducts";
+}
+
+<style>
+
+    body {
+        background-image: url('../../Images/assets/pexels-alscre-2847648.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+
+        height: 100vh;
+    }
+
+    .content-container {
+        background-color: none;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background-color: #28a745;
+        border-color: #28a745;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .pagination .page-link {
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .pagination .page-item:not(.active) .page-link:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #555;
+    }
+</style>
+
+<div class="container content-container">
+    <h2 class="text-center">Sports Products</h2>
+
+    <div class="row mb-4 justify-content-between">
+        
+        <div class="col-md-6 mx-auto">
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search Products..." aria-label="Search Products">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button" onclick="filterProducts()">Search</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-4">
+            
+            <div class="col-md-6">
+                <form method="get" action="@Url.Action("GetProducts")">
+                    <label for="categoryFilter" class="form-label">Category:</label>
+                    <select name="categoryId" id="categoryFilter" class="form-select" onchange="this.form.submit()">
+                        <option value="">All Categories</option>
+
+                        @foreach (var category in ViewBag.Categories)
+
+                        {
+                            <option value="@category.CategoryId" @(Request.QueryString["categoryId"] == category.CategoryId.ToString() ? "selected" : "")>
+
+                                @category.CategoryName
+                            </option>
+
+                        }
+                    </select>
+                </form>
+            </div>
+
+            
+            <div class="col-md-3 text-end">
+                <form method="get" action="@Url.Action("GetProducts")">
+                    <label for="sortOrder" class="form-label">Sort by:</label>
+                    <select name="sortOrder" id="sortOrder" class="form-select" onchange="this.form.submit()">
+                        <option value="price_asc" @(Request.QueryString["sortOrder"] == "price_asc" ? "selected" : "")>Price: Low to High</option>
+                        <option value="price_desc" @(Request.QueryString["sortOrder"] == "price_desc" ? "selected" : "")>Price: High to Low</option>
+                        <option value="name_asc" @(Request.QueryString["sortOrder"] == "name_asc" ? "selected" : "")>Name: A-Z</option>
+                        <option value="name_desc" @(Request.QueryString["sortOrder"] == "name_desc" ? "selected" : "")>Name: Z-A</option>
+                    </select>
+                    <input type="hidden" name="categoryId" value="@Request.QueryString["categoryId"]" />
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="row" id="productList">
+
+            @if (Model != null && Model.Any())
+
+            {
+
+                foreach (var product in Model)
+
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12 product-item mb-4">
+                        <div class="card h-100">
+                            <img src="@Url.Content(product.ImagePath)" alt="@product.ProductName" class="img-fluid product-image card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">@product.ProductName</h5>
+                                <p class="card-text">@product.Price Taka</p>
+                                <form method="post" action="@Url.Action("AddToCart", "Cart", new { productId = product.ProductId })">
+                                    <button type="submit" class="btn btn-primary w-100">Add to Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+            }
+
+            else
+
+            {
+                <p>No products available.</p>
+
+            }
+        </div>
+
+       
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+
+                        @if (Model.PageCount > 1)
+
+                        {
+                            
+                            <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                                <a class="page-link" href="@Url.Action("GetProducts", new { page = Model.PageNumber - 1, sortOrder = ViewBag.CurrentSort, categoryId = Request.QueryString["categoryId"] })">Previous</a>
+                            </li>
+
+                            
+
+                            for (int i = 1; i <= Model.PageCount; i++)
+
+                            {
+
+                                if (i == Model.PageNumber)
+
+                                {
+                                    <li class="page-item active">
+                                        <a class="page-link">@i</a>
+                                    </li>
+
+                                }
+
+                                else
+
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" href="@Url.Action("GetProducts", new { page = i, sortOrder = ViewBag.CurrentSort, categoryId = Request.QueryString["categoryId"] })">@i</a>
+                                    </li>
+
+                                }
+
+                            }
+
+                           
+                            <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                                <a class="page-link" href="@Url.Action("GetProducts", new { page = Model.PageNumber + 1, sortOrder = ViewBag.CurrentSort, categoryId = Request.QueryString["categoryId"] })">Next</a>
+                            </li>
+
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+<script>function filterProducts() {
+
+        var input = document.getElementById('searchInput').value.toLowerCase();
+
+        var filterWords = input.split(' ');
+
+        var productList = document.getElementById('productList');
+
+        var productItems = productList.getElementsByClassName('product-item');
+
+        for (var i = 0; i < productItems.length; i++) {
+
+            var productName = productItems[i].getElementsByClassName('card-title')[0].textContent.toLowerCase();
+
+            var showProduct = filterWords.every(function (word) {
+
+                return productName.indexOf(word) !== -1;
+
+            });
+
+            if (showProduct) {
+
+                productItems[i].style.display = "";
+
+            } else {
+
+                productItems[i].style.display = "none";
+
+            }
+
+        }
+
+}
+</script>

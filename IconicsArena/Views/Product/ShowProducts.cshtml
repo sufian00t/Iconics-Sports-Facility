@@ -1,0 +1,106 @@
+﻿@model IEnumerable<IconicsArena.Context.Product>
+
+@{
+    ViewBag.Title = "ShowProducts";
+}
+
+<h2 class="text-center my-4">Show All Products</h2>
+
+
+<div class="text-right mb-4">
+    <a href="@Url.Action("AddProducts", "Product")" class="btn btn-success btn-lg">Add New Product</a>
+</div>
+
+
+<table class="table table-bordered table-hover table-responsive-md">
+    <thead class="thead-dark">
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr class="table-light">
+                <td>
+                    <img src="@Url.Content(product.ImagePath)" alt="@product.ProductName" class="img-thumbnail" style="width: 100px; height: auto;" />
+                </td>
+                <td>@product.ProductName</td>
+                <td>@product.Category.CategoryName</td>
+                <td>@product.Price.ToString() Taka</td>
+                <td>@product.Stock</td>
+                <td>
+                   
+                    <div class="d-flex">
+                       
+                        <a href="@Url.Action("EditProduct", "Product", new { id = product.ProductId })" class="btn btn-warning btn-sm">Edit Stock</a>
+
+                        
+                        @using (Html.BeginForm("DeleteProduct", "Product", FormMethod.Post))
+                        {
+                            @Html.Hidden("id", product.ProductId)
+                            <input type="submit" value="Remove" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to remove this product?');" />
+                        }
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    body {
+        background-image: url('../../Images/assets/pexels-alscre-2847648.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100%;
+        color: #343a40;
+    }
+
+    .table {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .thead-dark th {
+        text-align: center;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f1f1;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+    .btn-warning:hover, .btn-danger:hover, .btn-success:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-center {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    h2.my-4 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+   
+    .d-flex {
+        display: flex;
+        gap: 5px; 
+        align-items: center;
+    }
+</style>

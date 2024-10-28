@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+    setTimeout(() => {
+        const box = document.getElementById('hide');
+        box.style.display = 'none';
+    }, 3000);
+</script>
+
+@if (ViewBag.DataBanned == 1)
+{
+    <div id="hide" , class="alert alert-danger">
+        <strong>@TempData["BanMsg"]</strong>
+    </div>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Contents/StyleSheet1.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <title>@ViewBag.Title</title>
+    <style>
+
+        body {
+
+            background-image: url('@Url.Content("~/Images/assets/marcos-moraes-rFehnP5wN4Q-unsplash.jpg")');
+
+            background-size: cover; 
+
+            background-position: center; 
+
+            background-repeat: no-repeat; 
+
+            margin: 0; 
+
+            height: 100vh; 
+
+            display: flex; 
+
+            flex-direction: column; 
+
+        }
+
+        .hero-section {
+
+            flex: 1; 
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+       
+        <section class="hero-section d-flex align-items-center justify-content-center text-white">
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-md-8 d-flex align-items-center">
+                       
+                        <div class="bg-dark bg-opacity-75 text-start p-4 rounded">
+                         
+                            <h1 class="display-5 fw-bold">
+
+                                Game Arena with in-store facility for all your gaming needs!
+                            </h1>
+                            <p class="lead">
+
+                                "Step into our Game Arena for an immersive gaming experience, featuring a wide range of games and an in-store facility offering the latest gear and accessories, all in one place!"
+                            </p>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        
+                        <img src="@Url.Content("~/Images/assets/image.png")" alt="Hero Image" class="img-fluid" /> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

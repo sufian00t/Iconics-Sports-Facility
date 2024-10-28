@@ -1,0 +1,204 @@
+﻿@model IEnumerable<IconicsArena.Context.Slot>
+@{
+    ViewBag.Title = "BookSlots";
+}
+
+<style>
+
+    
+
+    html, body {
+        margin: 0; 
+
+        height: 100%; 
+
+        width: 100%; 
+
+        overflow: hidden; 
+    }
+
+    
+
+    body {
+        background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+        background-size: cover; 
+
+        background-position: center; 
+    }
+
+    
+
+    .background {
+        display: flex;
+        align-items: center; 
+
+        justify-content: center; 
+
+        height: 100vh; 
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.8); 
+
+        padding: 20px; 
+
+        border-radius: 10px; 
+
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+
+        width: 300px; 
+
+        z-index: 1; 
+
+        position: relative; 
+    }
+
+    
+
+    .navbar {
+        position: absolute; 
+
+        top: 0; 
+
+        left: 0; 
+
+        right: 0; 
+
+        z-index: 2; 
+
+        background-color: rgba(0, 0, 0, 0.7); 
+
+        color: white; 
+
+        padding: 10px; 
+    }
+</style>
+
+<div class="background">
+    <div class="form-container">
+        <h2>Book a Slot</h2>
+
+        <div>
+            <form id="slotForm" method="post" action="/Slots/BookSlot">
+
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    <label for="dayDropdown">Select Day</label>
+                    <select id="dayDropdown" class="form-control" onchange="filterSlotsByDay()">
+                        <option value="">-- Select Day --</option>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <label for="timeDropdown">Select Time</label>
+                    <select id="timeDropdown" class="form-control" onchange="updatePrice()" disabled>
+                        <option value="">-- Select Time --</option>
+                    </select>
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="text" id="price" class="form-control" readonly />
+                </div>
+                <br />
+
+                <input type="hidden" id="slotId" name="slotId" />
+                <button type="submit" class="btn btn-primary" disabled id="bookButton">Book Now</button>
+                <br />
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var allSlots = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+
+    function filterSlotsByDay() {
+
+        var selectedDay = document.getElementById("dayDropdown").value;
+
+        var timeDropdown = document.getElementById("timeDropdown");
+
+        timeDropdown.innerHTML = '<option value="">-- Select Time --</option>';
+
+        if (selectedDay === "") {
+
+            timeDropdown.disabled = true;
+
+            document.getElementById("bookButton").disabled = true;
+
+            return;
+
+        }
+
+        var availableSlots = allSlots.filter(function(slot) {
+
+            return slot.Day === selectedDay;
+
+        });
+
+        if (availableSlots.length > 0) {
+
+            availableSlots.forEach(function(slot) {
+
+                var option = document.createElement("option");
+
+                option.value = slot.SlotId;
+
+                option.text = slot.Time;
+
+                option.setAttribute("data-price", slot.Price);
+
+                timeDropdown.appendChild(option);
+
+            });
+
+            timeDropdown.disabled = false;
+
+        } else {
+
+            timeDropdown.disabled = true;
+
+            alert("No available slots for the selected day.");
+
+        }
+
+    }
+
+    function updatePrice() {
+
+        var timeDropdown = document.getElementById("timeDropdown");
+
+        var selectedOption = timeDropdown.options[timeDropdown.selectedIndex];
+
+        if (selectedOption.value === "") {
+
+            document.getElementById("price").value = "";
+
+            document.getElementById("bookButton").disabled = true;
+
+            return;
+
+        }
+
+        var price = selectedOption.getAttribute("data-price");
+
+        document.getElementById("price").value = price;
+
+        document.getElementById("slotId").value = selectedOption.value;
+
+        document.getElementById("bookButton").disabled = false;
+
+    }
+</script>

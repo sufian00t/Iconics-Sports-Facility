@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "ShowAccount";
+}
+
+<style>
+
+    body {
+        background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        margin: 0; 
+    }
+
+    h2 {
+        text-align: center;
+        color: #fff; 
+
+        margin: 30px 0; 
+    }
+
+    .card {
+        margin: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px; 
+
+        overflow: hidden; 
+
+        transition: transform 0.3s; 
+    }
+
+        .card:hover {
+            transform: translateY(-5px); 
+        }
+
+    .card-header {
+        background-color: #007bff; 
+
+        color: #fff; 
+
+        font-weight: bold;
+        text-align: center; 
+
+        padding: 15px 0;
+    }
+
+    .card-body {
+        background-color: #ffffff;
+
+        padding: 20px;
+        text-align: center; 
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+</style>
+
+<div class="container mt-5">
+    <h2>Account Details</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Booking History</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">View all your past bookings.</p>
+
+                    @Html.ActionLink("View Booking History", "BookingHistory", "Order", null, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Order History</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Check your previous orders.</p>
+
+                    @Html.ActionLink("View Order History", "PurchaseHistory", "Order", null, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Edit Profile</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Update your profile information.</p>
+
+                    @Html.ActionLink("Edit Profile", "EditAccount", "Account", new { id = Session["Id"] }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

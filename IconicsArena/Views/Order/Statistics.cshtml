@@ -1,0 +1,61 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewBag.Title = "Statistics";
+}
+
+
+<h2>Daily Sales Statistics</h2>
+
+
+<div class="chart-container">
+    <canvas id="salesChart" width="800" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    var dailySales = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+
+    var dates = dailySales.map(function(sale) { return new Date(sale.Date).toLocaleDateString(); });
+    var sales = dailySales.map(function(sale) { return sale.TotalSales; });
+
+    var ctx = document.getElementById('salesChart').getContext('2d');
+    var salesChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [{
+                label: 'Total Sales (in currency)',
+                data: sales,
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderWidth: 2,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                },
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Total Sales (in currency)'
+                    },
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+<style>
+    .chart-container {
+        margin-top: 20px;
+    }
+</style>

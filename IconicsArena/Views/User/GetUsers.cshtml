@@ -1,0 +1,74 @@
+﻿@model IEnumerable<IconicsArena.Context.User>
+
+@{
+    ViewBag.Title = "GetUsers";
+}
+
+<style>
+    body {
+        background: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp') no-repeat center center fixed; /* Use your desired background image */
+        background-size: cover; /* Ensures the background covers the entire screen */
+        margin: 0;
+        color: #333; /* Adjust text color for readability */
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em; /* Adjust font size as needed */
+        color: white; /* Change color for better contrast against the background */
+    }
+
+    .table {
+        background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for the table */
+        border-radius: 5px; /* Rounded corners for the table */
+    }
+
+    .btn {
+        margin-right: 10px; /* Adds some space between buttons */
+    }
+</style>
+
+<div class="container">
+    <h2>User Management</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                if (user.Role.ToString() != "Admin")
+                {
+                    <tr>
+                        <td>@user.UserId</td>
+                        <td>@user.Name</td>
+                        <td>@user.Email</td>
+                        <td>@user.Address</td>
+                        <td>@user.Gender</td>
+                        <td>@user.Role</td>
+                        <td>
+                            @if (user.isBanned)
+                            {
+                                @Html.ActionLink("Unban", "BanUnbanUser", new { id = user.UserId }, new { @class = "btn btn-warning" })
+                            }
+                            else
+                            {
+                                @Html.ActionLink("Ban", "BanUnbanUser", new { id = user.UserId }, new { @class = "btn btn-danger" })
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

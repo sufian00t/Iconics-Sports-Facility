@@ -1,0 +1,93 @@
+﻿@model IEnumerable<IconicsArena.Context.Order>
+@{
+    ViewBag.Title = "Purchase History";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp'); 
+            background-size: cover; 
+            background-position: center; 
+            margin: 0; 
+        }
+
+        .table th, .table td {
+            vertical-align: middle; 
+        }
+
+        .purchase-history-container {
+            max-width: 800px; 
+            margin: 30px auto; 
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        h2 {
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+
+        ul {
+            padding-left: 20px; 
+        }
+
+        .alert {
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container purchase-history-container">
+        
+        <h2>Purchase History</h2>
+
+        @if (!Model.Any())
+        {
+            <p>You have not placed any orders yet.</p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Order Date</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                        <th>Is Delivered</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+                        foreach (var sale in order.Sales)
+                        {
+                            <tr>
+                                <td>@order.OrderDate.ToString()</td>
+                                <td>@sale.Product.ProductName</td>
+                                <td>@sale.Quantity</td>
+                                <td>@sale.UnitPrice.ToString() Taka</td>
+                                <td>@(sale.Quantity * sale.UnitPrice) Taka</td>
+                                <td>@(order.IsDelivered ?? false ? "Yes" : "No")</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

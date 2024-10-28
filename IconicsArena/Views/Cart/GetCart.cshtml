@@ -1,0 +1,172 @@
+﻿@model IconicsArena.Context.Cart
+@{
+    ViewBag.Title = "GetCart";
+}
+
+
+
+<div class="cart-container" style="padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    <h2> Your Cart</h2>
+
+    <hr />
+    <hr />
+
+    @if (Model != null && Model.CartItems.Any())
+
+    {
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model.CartItems)
+
+                {
+                    <tr class="animate__animated animate__fadeIn">
+                        <td>@item.Product.ProductName</td>
+                        <td>
+                            <button class="btn btn-sm btn-secondary tap-animation" onclick="changeQuantity(@item.CartItemId, -1)">-</button>
+                            <input type="text" id="quantity-@item.CartItemId" value="@item.Quantity" readonly style="width: 40px; text-align: center;" />
+                            <button class="btn btn-sm btn-secondary tap-animation" onclick="changeQuantity(@item.CartItemId, 1)">+</button>
+                        </td>
+                        <td data-unit-price="@item.UnitPrice" id="unitprice-@item.CartItemId">@item.UnitPrice</td>
+                        <td id="total-@item.CartItemId">@item.Quantity * @item.UnitPrice</td>
+                        <td>
+                            <form method="post" action="@Url.Action("RemoveFromCart", "Cart")">
+                                <input type="hidden" name="itemId" value="@item.CartItemId" />
+                                <button type="submit" class="btn btn-danger tap-animation">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+
+        <h3>Total Amount: <span id="totalAmount">@Model.TotalAmount</span></h3>
+
+        <form method="get" action="@Url.Action("Checkout", "Order")">
+            <button type="submit" class="btn btn-success tap-animation">Checkout</button>
+        </form>
+
+    }
+
+    else
+
+    {
+        <p>Your cart is empty.</p>
+
+    }
+</div>
+
+<script>
+
+    function changeQuantity(cartItemId, increment) {
+
+        var currentQuantity = parseInt($('#quantity-' + cartItemId).val());
+
+        var newQuantity = currentQuantity + increment;
+
+        var stock = parseInt($('#stock-' + cartItemId).data('stock'));
+
+        if (newQuantity > stock) {
+
+            alert('Cannot exceed available stock. Only ' + stock + ' items in stock.');
+
+            return;
+
+        }
+
+        if (newQuantity < 1) {
+
+            alert('Quantity cannot be less than 1.');
+
+            return;
+
+        }
+
+        $.ajax({
+
+            url: '@Url.Action("UpdateQuantity", "Cart")',
+
+            type: 'POST',
+
+            data: { cartItemId: cartItemId, quantity: newQuantity },
+
+            success: function (result) {
+
+                if (result.success) {
+
+                    $('#quantity-' + cartItemId).val(newQuantity);
+
+                    var unitPrice = parseFloat($('#unitprice-' + cartItemId).data('unit-price'));
+
+                    var total = unitPrice * newQuantity;
+
+                    $('#total-' + cartItemId).text(total.toFixed(2));
+
+                    $('#totalAmount').text(result.totalAmount.toFixed(2));
+
+                } else {
+
+                    alert(result.message);
+
+                }
+
+            },
+
+            error: function () {
+
+                alert('Error updating the quantity.');
+
+            }
+
+        });
+
+    }
+</script>
+
+<style>
+
+    body {
+        margin: 0;
+        height: 100vh;
+        background-image: url('../../Images/assets/pexels-alscre-2847648.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .cart-container {
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.8); 
+
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .btn {
+        margin: 0 5px;
+    }
+
+
+    .tap-animation {
+        transition: transform 0.1s ease-in-out;
+    }
+
+        .tap-animation:active {
+            transform: scale(0.95);
+        }
+</style>

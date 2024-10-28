@@ -1,0 +1,110 @@
+﻿@model IconicsArena.Context.User
+@{
+    ViewBag.Title = "EditAccount";
+}
+
+<h2>EditAccount</h2>
+
+<style>
+
+    body {
+        background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; 
+
+        margin: 0; 
+    }
+
+    .rederr {
+        color: red;
+        font-size: 0.875rem; 
+    }
+
+    .form-container {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        max-width: 500px;
+        width: 100%;
+        margin: 50px auto; 
+    }
+
+    .card-header {
+        background-color: #007bff;
+        border-radius: 15px 15px 0 0;
+        text-align: center; 
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <div class="card">
+                    <div class="card-header text-white">
+                        <h2 class="mb-0">Edit Your Account</h2>
+                    </div>
+                    <div class="card-body">
+
+                        @using (Html.BeginForm("EditAccount", "Account", FormMethod.Post))
+
+                        {
+                            <div class="mb-3">
+
+                                @Html.LabelFor(x => x.Name, new { @class = "form-label" })
+
+                                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+                                @Html.ValidationMessageFor(x => x.Name, "", new { @class = "rederr" })
+                            </div>
+                            <div class="mb-3">
+
+                                @Html.LabelFor(x => x.Email, new { @class = "form-label" })
+
+                                @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control" } })
+
+                                @Html.ValidationMessageFor(x => x.Email, "", new { @class = "rederr" })
+                            </div>
+                            <div class="mb-3">
+
+                                @Html.LabelFor(x => x.PasswordHash, "Password", new { @class = "form-label" })
+
+                                @Html.PasswordFor(x => x.PasswordHash, new { @class = "form-control" })
+
+                                @Html.ValidationMessageFor(x => x.PasswordHash, "", new { @class = "rederr" })
+                            </div>
+                            <div class="mb-3">
+
+                                @Html.LabelFor(x => x.Address, "Billing Address", new { @class = "form-label" })
+
+                                @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+
+                                @Html.ValidationMessageFor(x => x.Address, "", new { @class = "rederr" })
+                            </div>
+                            <div class="mb-3">
+
+                                @Html.LabelFor(x => x.Gender, "Gender", new { @class = "form-label" })
+                                <div>
+
+                                    @Html.RadioButtonFor(x => x.Gender, "Male", new { @class = "form-check-input me-1" }) Male
+
+                                    @Html.RadioButtonFor(x => x.Gender, "Female", new { @class = "form-check-input me-1" }) Female
+                                </div>
+
+                                @Html.ValidationMessageFor(x => x.Gender, "", new { @class = "rederr" })
+                            </div>
+                            <div class="mb-3">
+                                <input id="btnSaveChanges" type="submit" value="Save Changes" class="btn btn-primary" />
+                            </div>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

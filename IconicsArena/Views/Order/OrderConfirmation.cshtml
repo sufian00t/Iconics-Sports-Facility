@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "OrderConfirmation";
+}
+
+<style>
+    body {
+        background: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        color: #333;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em;
+    }
+
+    .alert {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+    }
+</style>
+
+<h2>Order Confirmation</h2>
+
+@if (TempData["SuccessMessage"] != null && TempData["OrderId"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"] <br />
+        Your Order ID is: <strong>@TempData["OrderId"]</strong>
+    </div>
+}
+else
+{
+    <p>There was an issue with your order. Please try again.</p>
+}

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+    <main aria-labelledby="title" class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 id="title" class="mb-4 display-4">@ViewBag.Title</h2>
+                <h3 class="lead mb-4">@ViewBag.Message</h3>
+
+                <div class="card p-4 shadow-lg border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">We’d love to hear from you!</h4>
+                        <p class="card-text">
+                            Whether you have questions about our Iconic Football Facility, need assistance with bookings, or want to know more about our store, feel free to reach out.
+                        </p>
+
+                        <address class="text-left">
+                            <p>
+                                <strong>Phone:</strong>
+                                <a href="tel:+880123456789" class="text-decoration-none">+88 0123456789</a><br />
+                                <strong>Email:</strong>
+                                <a href="mailto:info@iconicfootball.com" class="text-decoration-none">info@iconicfootball.com</a><br />
+                                <strong>Address:</strong> Dhaka 1023<br />
+                            </p>
+                        </address>
+
+                        <p>You can also follow us on social media to stay updated on events and promotions.</p>
+                        <p><strong>For urgent inquiries:</strong> visit our facility or give us a call. We’re here to help!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

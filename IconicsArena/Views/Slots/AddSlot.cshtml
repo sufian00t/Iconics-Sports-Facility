@@ -1,0 +1,117 @@
+﻿@using IconicsArena.Context
+@model IconicsArena.Context.Slot
+@{
+    ViewBag.Title = "AddSlot";
+}
+
+<style>
+
+    
+
+    html, body {
+        margin: 0; 
+
+        height: 100%; 
+
+        width: 100%; 
+
+        overflow: hidden; 
+    }
+
+ 
+
+    body {
+        background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');
+        background-size: cover; 
+
+        background-position: center; 
+    }
+
+    
+
+    .background {
+        display: flex;
+        align-items: center; 
+
+        justify-content: center; 
+
+        height: 100vh;
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.8); 
+
+        padding: 20px; 
+
+        border-radius: 10px; 
+
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+
+        width: 300px; 
+
+        z-index: 1; 
+
+        position: relative;
+    }
+
+    
+
+    .navbar {
+        position: absolute; 
+
+        top: 0; 
+
+        left: 0; 
+
+        right: 0; 
+
+        z-index: 2; 
+
+        background-color: rgba(0, 0, 0, 0.7); 
+
+        color: white; 
+
+        padding: 10px; 
+    }
+</style>
+
+<div class="background">
+    <div class="form-container">
+        <h2>Add Slot</h2>
+
+        @using (Html.BeginForm("AddSlot", "Slots", FormMethod.Post))
+
+        {
+            <div class="form-group">
+                <label for="Day">Day</label>
+
+                @Html.DropDownListFor(x => x.Day, new SelectList(Enum.GetValues(typeof(Days))), "--Select Day--", new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="Time">Time</label>
+
+                @Html.DropDownListFor(m => m.Time, ViewBag.TimeSlots as List<SelectListItem>, "--Select Time Slot--", new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="Price">Price</label>
+
+                @Html.DropDownListFor(m => m.Price, ViewBag.Price as List<SelectListItem>, "--Set Price--", new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="IsAvailable">Is Available</label>
+
+                @Html.DropDownListFor(m => m.IsAvailable, new List<SelectListItem>
+
+                {
+
+                    new SelectListItem { Text = "Yes", Value = "true" },
+
+                    new SelectListItem { Text = "No", Value = "false" }
+
+                }, "--Select Availability--", new { @class = "form-control" })
+            </div>
+            <input type="submit" value="Add Slot" class="btn btn-primary" />
+
+        }
+    </div>
+</div>

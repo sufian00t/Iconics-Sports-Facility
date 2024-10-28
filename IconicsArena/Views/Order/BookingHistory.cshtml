@@ -1,0 +1,93 @@
+﻿@model IEnumerable<IconicsArena.Context.Booking>
+@{
+    ViewBag.Title = "BookingHistory";
+}
+
+<h2>Booking History</h2>
+
+<style>
+
+    body {
+        background-image: url('../Images/assets/pexels-earano-3608295.jpg'); 
+
+        background-size: cover; 
+
+        background-position: center; 
+
+        background-repeat: no-repeat; 
+
+        background-attachment: fixed; 
+
+        color: white; 
+    }
+
+    .table {
+        background-color: rgba(255, 255, 255, 0.8); 
+
+        border-radius: 10px; 
+
+        width: 100%; 
+
+        max-width: 800px; 
+
+        margin: 20px auto; 
+    }
+
+    th, td {
+        text-align: center; 
+    }
+</style>
+
+<div class="container mt-5">
+    <h2 class="text-center">Booking History</h2>
+
+    @if (Model != null && Model.Any())
+
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Booked Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var booking in Model)
+
+                {
+                    <tr>
+                        <td>@booking.Slot.Day</td>
+                        <td>@booking.Slot.Time</td>
+                        <td>
+
+                            @if (booking.IsBooked.HasValue && booking.IsBooked.Value)
+
+                            {
+                                <span style="color: green;">✔</span>
+
+                            }
+
+                            else
+
+                            {
+                                <span style="color: red;">✘</span>
+
+                            }
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+
+    }
+
+    else
+
+    {
+        <p class="text-center">You have no bookings in your history.</p>
+
+    }
+</div>

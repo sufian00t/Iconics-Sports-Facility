@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconics Sports Facility</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            @Html.ActionLink("Iconics Sports Facility", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    @if (Session["Role"] == null || Session["Role"].ToString() == "Customer")
+                    {
+                        <li>@Html.ActionLink("Book a Slot!", "BookSlots", "Slots", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Products", "GetProducts", "Product", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("About Us", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contact Us", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    }
+
+                    @if (Session["Role"]?.ToString() == "Admin")
+                    {
+                        <li>@Html.ActionLink("User Management", "GetUsers", "User", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Product Management", "ShowProducts", "Product", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Slot Management", "RemoveSlots", "Slots", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Sales History", "Statistics", "Order", new { area = "" }, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+
+                <ul class="navbar-nav">
+                    @if (Session["Role"]?.ToString() == "Admin")
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link text-white">Welcome, Admin!</span>
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-link btn btn-outline-danger" })
+                        </li>
+                    }
+                    else if (Session["Role"]?.ToString() == "Customer")
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link text-white">@Html.ActionLink("Welcome," + @Session["Name"].ToString(), "ShowAccount", "Account", new { area = "" }, new { @class = "nav-link" })</span>
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Cart", "GetCart", "Cart", new { area = "" }, new { @class = "nav-link btn btn-outline-success" })
+                        </li>
+                        <li>&nbsp;</li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new { @class = "nav-link btn btn-outline-danger" })
+                        </li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Login", "Login", "Account", new { area = "" }, new { @class = "nav-link btn btn-outline-primary" })</li>
+                        <li>&nbsp;</li>
+                        <li>@Html.ActionLink("Signup", "Signup", "Account", new { area = "" }, new { @class = "nav-link btn btn-primary ml-2" })</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Iconics Sports Facility</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

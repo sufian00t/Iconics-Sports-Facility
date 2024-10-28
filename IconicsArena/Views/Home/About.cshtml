@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; 
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center; 
+        }
+
+        p {
+            font-size: 1.2em; 
+            color: #333;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <main aria-labelledby="title">
+        <div class="content-wrapper">
+            <h2 id="title" class="mb-4">@ViewBag.Title</h2>
+            <p>At Iconic Football Facility, we bring football and shopping together. Our top-tier football arena offers premium playing fields, while our store provides the latest gear, apparel, and equipment for both players and fans. Whether you're here to book a game or shop for your next match, we've got everything you need to elevate your football experience.</p>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

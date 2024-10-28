@@ -1,0 +1,77 @@
+﻿@using IconicsArena.Context
+
+@model IconicsArena.Context.Slot
+@{
+    ViewBag.Title = "EditSlot";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp'); 
+            background-size: cover; 
+            background-position: center; 
+            margin: 0; 
+        }
+
+        .edit-slot-container {
+            max-width: 600px; 
+            margin: 50px auto; 
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        h2 {
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container edit-slot-container">
+        <h2>Edit Slot</h2>
+
+        @using (Html.BeginForm("EditSlot", "Slots", FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.SlotId)
+
+            <div class="form-group">
+                <label for="Day">Day</label>
+                @Html.DropDownListFor(x => x.Day, new SelectList(Enum.GetValues(typeof(Days))), "--Select Day--", new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label for="Time">Time</label>
+                @Html.DropDownListFor(m => m.Time, ViewBag.TimeSlots as List<SelectListItem>, "--Select Time Slot--", new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label for="Price">Price</label>
+                @Html.DropDownListFor(m => m.Price, ViewBag.Price as List<SelectListItem>, "--Set Price--", new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label for="IsAvailable">Is Available</label>
+                @Html.DropDownListFor(m => m.IsAvailable, new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Yes", Value = "true", Selected = Model.IsAvailable == true },
+                    new SelectListItem { Text = "No", Value = "false", Selected = Model.IsAvailable == false }
+                }, "--Select Availability--", new { @class = "form-control" })
+            </div>
+
+            <input type="submit" value="Save Changes" class="btn btn-primary" />
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

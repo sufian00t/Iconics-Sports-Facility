@@ -1,0 +1,651 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\slots\\editslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\slots\\editslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\slots\\bookslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\slots\\bookslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\slots\\addslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\slots\\addslot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\controllers\\slotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\slotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\viewmodel\\signupvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\viewmodel\\signupvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\controllers\\api\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\controllers\\api\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\context\\footballarena.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\context\\footballarena.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\order\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\order\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\order\\purchasehistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\order\\purchasehistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\order\\bookinghistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\order\\bookinghistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\slots\\removeslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\slots\\removeslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\cart\\getcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\cart\\getcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|e:\\advance dot net\\a final project\\iconicsarena\\iconicsarena\\iconicsarena\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\slots\\showslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\slots\\showslots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\product\\showproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\product\\showproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\product\\getproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\product\\getproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\product\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\product\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\product\\addproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\product\\addproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\order\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\order\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\account\\showaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\account\\showaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\account\\editaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\context\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\context\\slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\iconicsarena\\views\\user\\getusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEC98971-3F74-48FA-98CE-C22B80847087}|IconicsArena\\IconicsArena.csproj|solutionrelative:iconicsarena\\views\\user\\getusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T07:14:08.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\OrderController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAswGkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T01:44:55.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\UserController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:34:57.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:43:48.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\CartController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\CartController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAgwF0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:04:25.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddSlot.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\AddSlot.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Slots\\AddSlot.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\AddSlot.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Slots\\AddSlot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:22:56.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookSlots.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\BookSlots.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Slots\\BookSlots.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\BookSlots.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Slots\\BookSlots.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:24:59.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditSlot.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\EditSlot.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Slots\\EditSlot.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\EditSlot.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Slots\\EditSlot.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T21:02:37.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwFYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T01:42:39.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SlotsController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\SlotsController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\SlotsController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\SlotsController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\SlotsController.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAiwJgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T07:04:08.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SignUpVM.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\ViewModel\\SignUpVM.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\ViewModel\\SignUpVM.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\ViewModel\\SignUpVM.cs",
+              "RelativeToolTip": "IconicsArena\\ViewModel\\SignUpVM.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T07:06:29.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAUwC8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T18:17:30.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\ViewModel\\LoginVM.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\ViewModel\\LoginVM.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\ViewModel\\LoginVM.cs",
+              "RelativeToolTip": "IconicsArena\\ViewModel\\LoginVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T07:06:25.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\api\\UsersController.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Controllers\\api\\UsersController.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Controllers\\api\\UsersController.cs",
+              "RelativeToolTip": "IconicsArena\\Controllers\\api\\UsersController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T17:36:05.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FootballArena.edmx [Diagram1]",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Context\\FootballArena.edmx",
+              "RelativeDocumentMoniker": "IconicsArena\\Context\\FootballArena.edmx",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Context\\FootballArena.edmx [Diagram1]",
+              "RelativeToolTip": "IconicsArena\\Context\\FootballArena.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-30T02:16:08.722Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Home\\About.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:27:31.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\App_Start\\RouteConfig.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "IconicsArena\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T18:02:24.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PurchaseHistory.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\PurchaseHistory.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Order\\PurchaseHistory.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\PurchaseHistory.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Order\\PurchaseHistory.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T18:27:30.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingHistory.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\BookingHistory.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Order\\BookingHistory.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\BookingHistory.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Order\\BookingHistory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:10:26.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Order\\Statistics.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\Statistics.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Order\\Statistics.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:52:09.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RemoveSlots.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\RemoveSlots.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Slots\\RemoveSlots.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\RemoveSlots.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Slots\\RemoveSlots.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAF4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:28:17.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetCart.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Cart\\GetCart.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Cart\\GetCart.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Cart\\GetCart.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Cart\\GetCart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:08:12.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Account\\Login.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:03:20.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Order\\Checkout.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\Checkout.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Order\\Checkout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:15:35.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ShowSlots.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\ShowSlots.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Slots\\ShowSlots.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Slots\\ShowSlots.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Slots\\ShowSlots.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:45:43.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EditProduct.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\EditProduct.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Product\\EditProduct.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\EditProduct.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Product\\EditProduct.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:20:26.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AddProducts.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\AddProducts.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Product\\AddProducts.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\AddProducts.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Product\\AddProducts.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:19:58.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Order\\OrderConfirmation.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Order\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Order\\OrderConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:25:31.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetProducts.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\GetProducts.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Product\\GetProducts.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\GetProducts.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Product\\GetProducts.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAANsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T02:21:34.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ShowProducts.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\ShowProducts.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Product\\ShowProducts.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Product\\ShowProducts.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Product\\ShowProducts.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:09:00.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:06:10.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ShowAccount.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\ShowAccount.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Account\\ShowAccount.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\ShowAccount.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Account\\ShowAccount.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAADUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T03:05:09.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:40:21.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE8AAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T18:21:18.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditAccount.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\EditAccount.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\Account\\EditAccount.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\Account\\EditAccount.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\Account\\EditAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T20:53:50.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Slot.cs",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Context\\Slot.cs",
+              "RelativeDocumentMoniker": "IconicsArena\\Context\\Slot.cs",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Context\\Slot.cs",
+              "RelativeToolTip": "IconicsArena\\Context\\Slot.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T02:16:32.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Web.config",
+              "RelativeDocumentMoniker": "IconicsArena\\Web.config",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Web.config",
+              "RelativeToolTip": "IconicsArena\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAADcAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-29T19:59:03.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "GetUsers.cshtml",
+              "DocumentMoniker": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\User\\GetUsers.cshtml",
+              "RelativeDocumentMoniker": "IconicsArena\\Views\\User\\GetUsers.cshtml",
+              "ToolTip": "E:\\Advance dot net\\A Final Project\\IconicsArena\\IconicsArena\\IconicsArena\\Views\\User\\GetUsers.cshtml",
+              "RelativeToolTip": "IconicsArena\\Views\\User\\GetUsers.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T17:46:52.901Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
